@@ -8,11 +8,11 @@
     @if (Model.WillAttend == true)
     {
         <p>Teşekkürler @Model.Name, toplantıya sizinle birlikte @ViewBag.UserCount kişi katılıyor.</p>
-        <a clas="btn btn-sm btn-outline-primary href=" #">Katılımcıları Listele</a>
+        <a class="btn btn-sm btn-outline-primary asp-controller="Meeting" asp-action="List">Katılımcıları Listele</a>
     }
     else
     {
         <p>@Model.Name, toplantıya katılmadığından dolayı üzgünüz.</p>
-        <a clas="btn btn-sm btn-outline-primary href="/meeting/apply">Başvuru Formu</a>
+        <a class="btn btn-sm btn-outline-primary asp-controller="Meeting" asp-action="Apply">Başvuru Formu</a>
     }
 </main>
