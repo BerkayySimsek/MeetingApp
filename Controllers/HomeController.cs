@@ -16,7 +16,7 @@ public class HomeController : Controller
         //ViewBag.UserName = "Berkay";
 
         ViewData["Hello"] = clock > 12 ? "İyi Günler" : "Günaydın";
-        ViewData["UserName"] = "Berkay";
+        //ViewData["UserName"] = "Berkay";
 
         var meetingInfo = new MeetingInfo()
         {
